@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/topwiseplugin.iml" filepath="$PROJECT_DIR$/.idea/modules/topwiseplugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/topwiseplugin.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/topwiseplugin.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/topwiseplugin.main.iml" filepath="$PROJECT_DIR$/.idea/modules/topwiseplugin.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/topwiseplugin.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/topwiseplugin.unitTest.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,59 @@
+group 'com.topwise.plugin'
+version '1.0'
+
+buildscript {
+    repositories {
+        maven {
+            url 'https://ytjj.cc:6660/Guest/Gradle/DownFile'
+        }
+        google()
+        jcenter()
+        mavenCentral()
+    }
+
+    dependencies {
+        //classpath 'com.android.tools.build:gradle:3.4.1'//7.4.2
+        classpath 'com.android.tools.build:gradle:7.2.1'//7.4.2
+    }
+}
+
+rootProject.allprojects {
+    repositories {
+        maven {
+            url 'https://ytjj.cc:6660/Guest/Gradle/DownFile'
+        }
+        google()
+        jcenter()
+        mavenCentral()
+    }
+}
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 34
+
+    defaultConfig {
+        minSdkVersion 16
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    lintOptions {
+        disable 'InvalidPackage'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    api 'com.jsoniter:jsoniter:0.9.19'
+    implementation files('libs/core-3.2.1.jar')
+    implementation files('libs/T1_V2_20230206.jar')
+    implementation files('libs/TopTool_V2_0_3.jar')
+}
